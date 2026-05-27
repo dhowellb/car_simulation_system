@@ -16,3 +16,7 @@ class Car:
         # Part 4: Kailangan din natin ng speedometer para malaman kung nahuhuli na tayo sa speed limit. Eto yung getter natin para masilip yung current speed natin.
     def get_speed(self):
         return self.__speed
+    
+    # Part 5: Para mas maangas ang output natin mamaya at hindi lang number, gumawa ako ng custom display dashboard. Ipapakita nito yung kotse natin, ano ginagawa, at yung bilis.
+    def display_speedometer(self, action_message):
+        print(f"| {action_message.upper()} | 🏎️  {self.__year_model} {self.__make} | Current Speed: {self.__speed} km/h")
