@@ -31,3 +31,13 @@ def test_car_program():
     for loop_count in range(5):
         my_sports_car.accelerate()
         my_sports_car.display_speedometer("Accelerating")
+
+        # Part 7: Tapos na ang joyride, kailangan na pumreno dahil may humps. Apak sa brake limang beses hanggang sa huminto, tapos i-run na natin ang buong script!
+    print("\n--- 🔴 BRAKING PHASE ---")
+    for loop_count in range(5):
+        my_sports_car.brake()
+        my_sports_car.display_speedometer("Braking     ")
+        
+
+if __name__ == "__main__":
+    test_car_program()
