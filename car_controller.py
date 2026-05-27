@@ -8,3 +8,7 @@ class Car:
         # Part 2: Kailangan nating umarangkada! Ito yung accelerate method natin. Kada tapak sa silinyador, dagdag 5 sa speed natin. Vroom vroom!
     def accelerate(self):
         self.__speed += 5
+
+        # Part 3: Siyempre bawal puro harurot, baka mabangga. Gawa tayo ng preno. Kada apak sa brake, babawas ng 5 yung speed natin para iwas disgrasya.
+    def brake(self):
+        self.__speed -= 5
