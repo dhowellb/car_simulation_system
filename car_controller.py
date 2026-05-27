@@ -20,3 +20,14 @@ class Car:
     # Part 5: Para mas maangas ang output natin mamaya at hindi lang number, gumawa ako ng custom display dashboard. Ipapakita nito yung kotse natin, ano ginagawa, at yung bilis.
     def display_speedometer(self, action_message):
         print(f"| {action_message.upper()} | 🏎️  {self.__year_model} {self.__make} | Current Speed: {self.__speed} km/h")
+
+        # Part 6: Start na ng road test! Gagawa tayo ng kotse natin (isang 2025 Mustang) tapos aapakan natin ang gas nang limang beses gamit ang for loop.
+def test_car_program():
+    print("\n[ STARTING CAR ENGINE... ]\n")
+    
+    my_sports_car = Car("2025", "Ford Mustang")
+    
+    print("--- 🟢 ACCELERATING PHASE ---")
+    for loop_count in range(5):
+        my_sports_car.accelerate()
+        my_sports_car.display_speedometer("Accelerating")
